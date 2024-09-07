@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aortic Stenosis Diagnostic Tool</title>
+    </head>
+    <body style="background-color: skyblue; color: white;">
+        <h1>Patient Portal</h1>
+        <h2>Enter observations</h2>
+        <h2>If an observation is unknown, select "Unknown" or leave blank.</h2>
+        <form action="/process" method="post">
+            <h3>Patient name</h3>
+            <input name="name" placeholder="Name" type="text">
+
+            <h3>Age (years)</h3>
+            <input name="age" placeholder="Age" type="text">
+
+            <h3>Sex</h3>
+                <input type="radio" id="sex_female" name="sex" value="1">
+                <label for="sex_female">Female</label>
+                <input type="radio" id="sex_male" name="sex" value="-1">
+                <label for="sex_male">Male</label>
+                <input type="radio" id="sex_unknown" name="sex" value="0" checked="checked">
+                <label for="sex_unknown">Unknown</label>
+
+            <h3>Ethnicity</h3>
+                <select name="ethnicity">
+                    <option value="African">African</option>
+                    <option value="Bangladeshi">Bangladeshi</option>
+                    <option value="Caribbean">Caribbean</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Irish">Irish</option>
+                    <option value="Pakistani">Pakistani</option>
+                    <option value="White">White</option>
+                    <option value="Unknown" selected="selected">Unknown</option>
+                </select>
+
+            <h3>Height (m)</h3>
+                <input name="height" placeholder="Height" type="text">
+
+            <h3>Weight (Kg)</h3>
+                <input name="weight" placeholder="Weight" type="text">
+
+            <h3>Systolic blood pressure (mmHg)</h3>
+                <input name="sbp" placeholder="Systolic BP" type="text">
+
+            <h3>Diastolic blood pressure (mmHg)</h3>
+                <input name="dbp" placeholder="Diastolic BP" type="text">
+
+            <h3>Estimated glomerular filtration rate (mm/min)</h3>
+                <input name="egfr" placeholder="eGFR" type="text">
+
+            <h3>Mean corpuscular volume (g/dL)</h3>
+                <input name="mcv" placeholder="MCV" type="text">
+
+            <h3>Cholesterol (mmol/L)</h3>
+                <input name="chol" placeholder="Cholesterol" type="text">
+
+            <h3>Triglycerides (mmol/L)</h3>
+                <input name="trig" placeholder="Triglycerides" type="text">
+
+            <h3>High density lipoprotein (mmol/L)</h3>
+                <input name="hdl" placeholder="HDL" type="text">
+
+            <h3>Low density lipoprotein (mmol/L)</h3>
+                <input name="ldl" placeholder="LDL" type="text">
+
+            <h3>Hypercholesterolaemia</h3>
+                <input type="radio" id="hcl_yes" name="hcl" value="1">
+                <label for="hcl_yes">Yes</label>
+                <input type="radio" id="hcl_no" name="hcl" value="-1">
+                <label for="hcl_no">No</label>
+                <input type="radio" id="hcl_unknown" name="hcl" value="0" checked="checked">
+                <label for="hcl_unknown">Unknown</label>
+
+            <h3>Cerebrovascular disease</h3>
+                <input type="radio" id="cvd_yes" name="cvd" value="1">
+                <label for="cvd_yes">Yes</label>
+                <input type="radio" id="cvd_no" name="cvd" value="-1">
+                <label for="cvd_no">No</label>
+                <input type="radio" id="cvd_unknown" name="cvd" value="0" checked="checked">
+                <label for="cvd_unknown">Unknown</label>
+
+            <h3>Asthma</h3>
+                <input type="radio" id="asth_yes" name="asthma" value="1">
+                <label for="asth_yes">Yes</label>
+                <input type="radio" id="asth_no" name="asthma" value="-1">
+                <label for="asth_no">No</label>
+                <input type="radio" id="asth_unknown" name="asthma" value="0" checked="checked">
+                <label for="asth_unknown">Unknown</label>
+
+            <h3>Heart failure</h3>
+                <input type="radio" id="hf_yes" name="hf" value="1">
+                <label for="hf_yes">Yes</label>
+                <input type="radio" id="hf_no" name="hf" value="-1">
+                <label for="hf_no">No</label>
+                <input type="radio" id="hf_unknown" name="hf" value="0" checked="checked">
+                <label for="hf_unknown">Unknown</label>
+
+            <h3>Atrial fibrillation</h3>
+                <input type="radio" id="af_yes" name="af" value="1">
+                <label for="af_yes">Yes</label>
+                <input type="radio" id="af_no" name="af" value="-1">
+                <label for="af_no">No</label>
+                <input type="radio" id="af_unknown" name="af" value="0" checked="checked">
+                <label for="af_unknown">Unknown</label>
+
+            <h3>Obesity</h3>
+                <input type="radio" id="ob_yes" name="ob" value="1">
+                <label for="ob_yes">Yes</label>
+                <input type="radio" id="ob_no" name="ob" value="-1">
+                <label for="ob_no">No</label>
+                <input type="radio" id="ob_unknown" name="ob" value="0" checked="checked">
+                <label for="ob_unknown">Unknown</label>
+
+            <h3>Previous myocardial infarction</h3>
+                <input type="radio" id="mi_yes" name="mi" value="1">
+                <label for="mi_yes">Yes</label>
+                <input type="radio" id="mi_no" name="mi" value="-1">
+                <label for="mi_no">No</label>
+                <input type="radio" id="mi_unknown" name="mi" value="0" checked="checked">
+                <label for="mi_unknown">Unknown</label>
+
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
